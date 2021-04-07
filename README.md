@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-with-html-scss-css-flexbox-2qoUBBQ6v)
+- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-html-and-scss-SeQI5kdHw)
 - Live Site URL: [Live Demo](https://captkraken.github.io/huddle-landing-page-with-single-introductory-section)
 
 ## My process
