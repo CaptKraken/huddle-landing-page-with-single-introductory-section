@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+// COLORS
+$clr-violet: hsl(257, 40%, 49%);
+$clr-soft-magenta: hsl(300, 69%, 71%);
+$clr-white: #fff;
+
+// Mobile: 375px
+// Desktop: 1440px
+
+// headings font-family: 'Open Sans', sans-serif;
+// body font-family: 'Poppins', sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+}
+
+body {
+  //   background-position: top 0vh right 0vw;
+  font-family: "Poppins", sans-serif;
+  color: $clr-white;
+  background-color: $clr-violet;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow-x: hidden;
+}
+.container {
+  background: $clr-violet url(../images/bg-mobile.svg) top/cover no-repeat;
+  background-size: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  &__logo {
+    width: 45%;
+    min-width: 150px;
+    max-width: 200px;
+  }
+}
+
+.main {
+  margin: 2.5rem 0;
+  &__illustration {
+    &--image {
+      width: 100%;
+    }
+  }
+  &__text {
+    margin-top: 3rem;
+    text-align: center;
+
+    &--heading {
+      text-transform: capitalize;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    &--paragraph {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.7;
+      font-size: 1.01rem;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  width: min-content;
+  text-decoration: none;
+  color: $clr-violet;
+  background: $clr-white;
+  margin: 2rem auto 0;
+  padding: 0.75rem 4.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 1rem rgba(#000, 0.1);
+  font-size: 0.875rem;
+
+  &:hover {
+    background: $clr-soft-magenta;
+    color: $clr-white;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $clr-white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    fill: $clr-white;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+    &:hover {
+      fill: $clr-soft-magenta;
+      border: 1px solid $clr-soft-magenta;
+    }
+  }
+}
+
+.btn,
+.footer__social {
+  transition: all 0.2s;
+}
+
+@media only screen and (min-width: 31.25rem) {
+  .main {
+    margin: 2.5rem 0;
+    &__illustration {
+      width: 95%;
+      margin: 0 auto;
+      &--image {
+      }
+    }
+    &__text {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      &--paragraph {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+
+// 540px
+@media only screen and (min-width: 33.75rem) {
+  .main {
+    &__illustration {
+      width: 90%;
+    }
+    &__text {
+      width: 90%;
+    }
+  }
+}
+
+// 600px
+@media only screen and (min-width: 37.5rem) {
+  .main {
+    &__illustration {
+      width: 85%;
+    }
+    &__text {
+      width: 85%;
+    }
+  }
+}
+
+// 700px
+@media only screen and (min-width: 43.75rem) {
+  .main {
+    &__illustration {
+      width: 80%;
+    }
+    &__text {
+      width: 80%;
+    }
+  }
+}
+
+// 1000px
+@media only screen and (min-width: 62.5rem) {
+  .container {
+    background: $clr-violet url(../images/bg-desktop.svg) center/cover no-repeat;
+    background-size: unset;
+    min-width: unset;
+    min-height: unset;
+    box-shadow: 0 0 3rem rgba(#000, 0.3);
+  }
+
+  .main {
+    display: flex;
+    align-items: flex-start;
+    &__illustration {
+      flex: 60%;
+
+      padding-right: 2rem;
+      width: 80%;
+    }
+    &__text {
+      flex: 40%;
+      width: 80%;
+      text-align: left;
+      &--heading {
+        font-size: 2.1rem;
+      }
+      &--paragraph {
+        padding: unset;
+        font-size: 1rem;
+      }
+    }
+  }
+  .btn {
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .footer {
+    justify-content: flex-end;
+  }
+}
+
+// 1111px
+@media only screen and (min-width: 69.4375rem) {
+  .main {
+    padding: 0 3rem;
+    &__illustration {
+    }
+    &__text {
+      &--heading {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+// 1200px
+@media only screen and (min-width: 75rem) {
+  .container {
+    min-width: unset;
+    min-height: unset;
+    max-width: 90rem;
+  }
+  .main {
+    &__illustration {
+      padding-right: 4rem;
+    }
+    &__text {
+      &--heading {
+        font-size: 2.6rem;
+      }
+      &--paragraph {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
