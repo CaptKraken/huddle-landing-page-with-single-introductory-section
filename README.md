@@ -29,11 +29,11 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ### Links
 
 - Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-with-html-scss-css-flexbox-2qoUBBQ6v)
-- Live Site URL: [Live Demo](https://captkraken.github.io/profile-card-component-main)
+- Live Site URL: [Live Demo](https://captkraken.github.io/huddle-landing-page-with-single-introductory-section)
 
 ## My process
 
-Started out with HTML then went the desktop-first route. After that, started modifying things to fix the problems.
+Started out with HTML then went the mobile-first route. After that, started modifying things to fix the problems.
 
 ### Built with
 
