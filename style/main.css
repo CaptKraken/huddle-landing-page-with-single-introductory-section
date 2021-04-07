@@ -53,6 +53,34 @@ body {
   max-width: 200px;
 }
 
+.header__logo:hover, .header__logo:focus {
+  -webkit-filter: invert(15%) sepia(32%) saturate(4194%) hue-rotate(241deg) brightness(95%) contrast(90%);
+          filter: invert(15%) sepia(32%) saturate(4194%) hue-rotate(241deg) brightness(95%) contrast(90%);
+}
+
+.header__logo,
+.btn,
+.footer__social {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.header__logo:hover, .header__logo:focus,
+.btn:hover,
+.btn:focus,
+.footer__social:hover,
+.footer__social:focus {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.header__logo:active,
+.btn:active,
+.footer__social:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .main {
   margin: 2.5rem 0;
 }
@@ -94,7 +122,7 @@ body {
   font-size: 0.875rem;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background: #e882e8;
   color: #fff;
 }
@@ -136,15 +164,9 @@ body {
   height: 1rem;
 }
 
-.footer__social:hover {
+.footer__social:hover, .footer__social:focus {
   fill: #e882e8;
   border: 1px solid #e882e8;
-}
-
-.btn,
-.footer__social {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 @media only screen and (min-width: 31.25rem) {
