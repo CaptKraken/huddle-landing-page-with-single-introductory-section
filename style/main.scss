@@ -64,6 +64,7 @@ body {
   &:hover,
   &:focus {
     transform: translateY(-3px);
+    outline: none;
   }
 
   &:active {

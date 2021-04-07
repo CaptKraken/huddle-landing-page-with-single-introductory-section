@@ -72,6 +72,7 @@ body {
 .footer__social:focus {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  outline: none;
 }
 
 .header__logo:active,
