@@ -11,6 +11,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -22,7 +23,7 @@ Your challenge is to build out this landing page from the designs provided in th
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Your users should be able to: 
+Your users should be able to:
 
 - View the optimal layout for the page depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -50,3 +51,7 @@ Started out with HTML then went the mobile-first route. After that, started modi
 
 - Website - [My Github](https://github.com/CaptKraken)
 - Frontend Mentor - [@CaptKraken](https://www.frontendmentor.io/profile/CaptKraken)
+
+## Acknowledgments
+
+I would like to thank [Grace Snow](https://www.frontendmentor.io/profile/grace-snow) for helping me with aria-labels for the links and suggesting that i add focus state on the interactive elements. 🙏
